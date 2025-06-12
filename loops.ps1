@@ -33,3 +33,47 @@ else{
     Write-host "Complier Error"
 }
 
+#while loop
+$j=1
+while($j -le 10){
+    Write-Host "the number is $j"
+    $j++
+}
+
+#do while loop
+
+$m=0
+do{
+    Write-Host $m
+    $m++
+}while($m -le 100)
+
+#do until
+
+$m=0
+do{
+    Write-Host $m
+    $m++
+}until($m -eq 1000)
+
+#switch case
+$random = get-random 4
+
+switch($random){
+    0{"it is 0";break}
+    1{"it is 1";break}
+    2{"it is 2";break}
+    3{"it is 3";break}
+    4{"it is 4";break}
+    default{"this is default"}
+}
+
+$r = get-random 2
+
+switch($r){
+    0{"red";break}
+    1{"blue";break}
+    2{"green";break}
+    default{"black"}
+}
+
